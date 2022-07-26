@@ -1,6 +1,6 @@
 import React from "react";
 import { IonApp } from "@ionic/react";
-import LandingScreen from "./Screens/LandingScreen";
+// import LandingScreen from "./Screens/LandingScreen";
 import LoginScreen from "./Screens/LoginScreen";
 
 const App = () => {
