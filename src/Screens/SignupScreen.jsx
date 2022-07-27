@@ -1,7 +1,6 @@
 import "../Styles/Login.css";
 import React from "react";
 import { IonPage, IonGrid, IonRow, IonCol } from "@ionic/react";
-import { BsGoogle, BsFacebook } from "react-icons/bs";
 
 const SignupScreen = () => {
   return (
