@@ -1,3 +1,4 @@
+import "./Styles/App.css";
 import React from "react";
 import { IonApp } from "@ionic/react";
 // import LandingScreen from "./Screens/LandingScreen";
