@@ -8,7 +8,8 @@ import SignupScreen from "./Screens/SignupScreen";
 import SuccessfulScreen from "./Screens/SuccessfulScreen";
 import HomeScreen from "./Screens/HomeScreen";
 import HomeTab from "./components/HomeTab";
-import SideMenu from "./components/SideMenu";
+import ProductScreen from "./Screens/ProductScreen";
+// import SideMenu from "./components/SideMenu";
 
 const App = () => {
   return (
@@ -19,7 +20,7 @@ const App = () => {
         <Route path="/signup" component={SignupScreen} />
         <Route path="/successful" component={SuccessfulScreen} />
         <Route path="/home" component={HomeScreen} />
-        <Route path="/side" component={SideMenu} />
+        <Route path="/products" component={ProductScreen} />
       </Switch>
       <HomeTab />
     </IonApp>
