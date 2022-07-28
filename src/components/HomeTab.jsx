@@ -7,15 +7,18 @@ import {
   RiHeart3Fill,
   RiUserFill,
 } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const HomeTab = () => {
   return (
     <IonPage>
       <IonGrid className="container">
         <IonRow className="secondContainer">
-          <IonCol className="homeTab">
-            <RiHome2Fill className="iconHome" /> <h4>Home</h4>
-          </IonCol>
+          <Link style={{ textDecoration: "none", color: "black" }} to="/home">
+            <IonCol className="homeTab">
+              <RiHome2Fill className="iconHome" /> <h4>Home</h4>
+            </IonCol>
+          </Link>
           <IonCol className="cartTab">
             <RiShoppingCart2Fill />
           </IonCol>

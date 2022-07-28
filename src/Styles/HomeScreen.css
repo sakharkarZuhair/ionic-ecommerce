@@ -271,3 +271,71 @@
 .popularPrice {
   font-weight: bold;
 }
+
+.sideMenu {
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  /* right: 0; */
+  left: 0;
+  bottom: 0;
+  /* z-index: 10000; */
+  /* border-right: 1px solid black; */
+  box-shadow: 2px 1px 12px 5px rgb(206, 206, 206);
+  padding: 1vh;
+  z-index: 100;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6vh;
+  margin-top: 4vh;
+}
+
+.topBar > h1 {
+  font-size: 3vh;
+}
+
+.topBar > h2 {
+  font-size: 1.8vh;
+  background-color: rgb(199, 199, 199);
+  color: black;
+  padding: 1vh;
+  border-radius: 10px;
+}
+
+.categoryOption {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 0.8vh 1vh;
+  margin-top: 2vh;
+}
+
+.categoryOne {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.categoryName {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 2vh;
+  margin-right: 1vh;
+}
+
+.categoryName > h2 {
+  font-size: 1.6vh;
+}
+
+.categoryProducts {
+  font-size: 1.5vh;
+}

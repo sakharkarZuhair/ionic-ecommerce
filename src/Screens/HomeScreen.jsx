@@ -1,18 +1,100 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { IonPage, IonGrid, IonRow, IonCol, IonCard } from "@ionic/react";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { FiSearch } from "react-icons/fi";
 import { AiFillStar } from "react-icons/ai";
+import { FaCartArrowDown } from "react-icons/fa";
+import { IoShirt, IoBagOutline } from "react-icons/io5";
+import { GiRunningShoe } from "react-icons/gi";
+import { MdElectricalServices } from "react-icons/md";
 import "../Styles/HomeScreen.css";
 // import  MenuExample  from "../components/Menu";
 
 const HomeScreen = () => {
+  const [show, setShow] = useState(false);
   return (
-    <IonPage style={{ marginTop: "5vh" }}>
+    <IonPage style={{ marginTop: "5vh", marginBottom: "10vh" }}>
+      <IonGrid
+        className="sideMenu"
+        style={{ display: `${show ? "block" : "none"}` }}
+      >
+        <div className="topBar">
+          <h1>Categories</h1>
+          <h2
+            onClick={() => {
+              setShow(!show);
+            }}
+          >
+            Close
+          </h2>
+        </div>
+        <div className="categoryContainer">
+          <div className="categoryOption">
+            <div className="categoryOne">
+              <div className="categoryName">
+                <FaCartArrowDown className="icon" />
+                <h2>New Arrivals</h2>
+              </div>
+              <div className="categoryProducts">
+                <span>268</span> Products
+              </div>
+            </div>
+          </div>
+          <div className="categoryOption">
+            <div className="categoryOne">
+              <div className="categoryName">
+                <IoShirt className="icon" />
+                <h2>Clothes</h2>
+              </div>
+              <div className="categoryProducts">
+                <span>500</span> Products
+              </div>
+            </div>
+          </div>
+          <div className="categoryOption">
+            <div className="categoryOne">
+              <div className="categoryName">
+                <IoBagOutline className="icon" />
+                <h2>Bags</h2>
+              </div>
+              <div className="categoryProducts">
+                <span>150</span> Products
+              </div>
+            </div>
+          </div>
+          <div className="categoryOption">
+            <div className="categoryOne">
+              <div className="categoryName">
+                <GiRunningShoe className="icon" />
+                <h2>Shoes</h2>
+              </div>
+              <div className="categoryProducts">
+                <span>256</span> Products
+              </div>
+            </div>
+          </div>
+          <div className="categoryOption">
+            <div className="categoryOne">
+              <div className="categoryName">
+                <MdElectricalServices className="icon" />
+                <h2>Electronics</h2>
+              </div>
+              <div className="categoryProducts">
+                <span>28</span> Products
+              </div>
+            </div>
+          </div>
+        </div>
+      </IonGrid>
       <IonGrid>
         <IonRow className="firstContainer">
           <IonCol className="colOne">
-            <HiOutlineMenuAlt2 className="menuIcon" />
+            <HiOutlineMenuAlt2
+              onClick={() => {
+                setShow(!show);
+              }}
+              className="menuIcon"
+            />
           </IonCol>
           <IonCol className="colTwo">
             <div className="searchBox">
