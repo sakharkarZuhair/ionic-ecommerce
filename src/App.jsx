@@ -7,6 +7,7 @@ import LoginScreen from "./Screens/LoginScreen";
 import SignupScreen from "./Screens/SignupScreen";
 import SuccessfulScreen from "./Screens/SuccessfulScreen";
 import HomeScreen from "./Screens/HomeScreen";
+import HomeTab from "./components/HomeTab";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/successful" component={SuccessfulScreen} />
         <Route path="/home" component={HomeScreen} />
       </Switch>
+      <HomeTab />
     </IonApp>
   );
 };
