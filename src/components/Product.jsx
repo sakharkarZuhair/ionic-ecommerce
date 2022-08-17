@@ -1,4 +1,4 @@
-import "../Styles/Product.css";
+import "../Styles/Products.css";
 import React from "react";
 import { IonPage, IonGrid, IonRow, IonCol, IonCard } from "@ionic/react";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";

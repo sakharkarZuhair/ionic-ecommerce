@@ -8,6 +8,7 @@ import SignupScreen from "./Screens/SignupScreen";
 import SuccessfulScreen from "./Screens/SuccessfulScreen";
 import HomeScreen from "./Screens/HomeScreen";
 import HomeTab from "./components/HomeTab";
+import ProductsScreen from "./Screens/ProductsScreen";
 import ProductScreen from "./Screens/ProductScreen";
 // import SideMenu from "./components/SideMenu";
 
@@ -20,7 +21,8 @@ const App = () => {
         <Route path="/signup" component={SignupScreen} />
         <Route path="/successful" component={SuccessfulScreen} />
         <Route path="/home" component={HomeScreen} />
-        <Route path="/products" component={ProductScreen} />
+        <Route path="/products" component={ProductsScreen} />
+        <Route path={"/product"} component={ProductScreen} />
       </Switch>
       <HomeTab />
     </IonApp>

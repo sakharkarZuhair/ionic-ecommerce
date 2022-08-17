@@ -1,45 +1,106 @@
-.productDetail {
-  /* border: 1px solid black; */
+.container {
+}
+
+.imageContainer {
+  margin-top: 3vh;
+  height: 40vh;
+  width: 100%;
+}
+
+.imageContainer > img {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.containerOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail {
+  line-height: 1vh;
+}
+
+.detail > h2 {
+  font-size: 3vh;
+}
+
+.detail > h3 {
+  font-size: 1.5vh;
+  font-weight: 400;
+  color: rgb(128, 128, 128);
+}
+
+.rating {
+  font-size: 1.8vh;
+}
+
+.qtyContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 20vh;
-  line-height: 0vh;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px 5px rgb(226, 226, 226);
-}
-.productImage {
-  width: 100%;
-  height: 20vh;
-  overflow: hidden;
-}
-.cardImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
 }
 
-.productDetail > h2 {
-  font-size: 2vh;
-  margin-top: 2.5vh;
+.qty {
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  text-align: center;
+  margin-top: 2vh;
+  /* line-height: 1vh; */
 }
-.productDetail > h3 {
+
+.qtyNo {
+  font-size: 2vh;
+  /* font-weight: bold; */
+  margin-right: 2vh;
+}
+
+.plusMinus {
   font-size: 1.5vh;
   font-weight: 400;
-  color: rgb(128, 128, 128);
-  margin-top: 1vh;
-}
-.productDetail > h4 {
-  font-size: 2vh;
-  margin-top: 1vh;
+  margin-right: 2vh;
 }
 
-.backIcon {
-  background-color: black;
-  padding: 1.5vh;
-  color: white;
-  border-radius: 100px;
-  font-size: 2vh;
+.stock {
+  font-size: 1.6vh;
+}
+
+.containerTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -2vh;
+}
+
+.sizeContainer > h5 {
+  font-size: 2.2vh;
+  line-height: 1vh;
+}
+
+.color {
+  background-color: brown;
+  height: 2.5vh;
+  width: 2.5vh;
+  border-radius: 100%;
+}
+
+.sizeDesc {
+  display: flex;
+  align-items: center;
+  margin-top: -2vh;
+  /* justify-content: space-evenly; */
+}
+
+.sizeDesc > p {
+  font-size: 1.5vh;
+  border: 1px solid rgb(190, 190, 190);
+  padding: 1vh;
+  border-radius: 100%;
+  text-align: center;
+  margin-right: 1vh;
 }
