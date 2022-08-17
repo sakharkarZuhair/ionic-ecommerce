@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/successful" component={SuccessfulScreen} />
         <Route path="/home" component={HomeScreen} />
         <Route path="/products" component={ProductsScreen} />
-        <Route path={"/product"} component={ProductScreen} />
+        <Route path="/product" component={ProductScreen} />
       </Switch>
       <HomeTab />
     </IonApp>

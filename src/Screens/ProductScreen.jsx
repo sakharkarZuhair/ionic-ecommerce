@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/Product.css";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+import { BsHandbag } from "react-icons/bs";
 import { IonPage, IonGrid, IonRow, IonCol } from "@ionic/react";
 
 const ProductScreen = () => {
@@ -74,13 +75,17 @@ const ProductScreen = () => {
         </IonRow>
         <IonRow>
           <IonCol>
-            <div>
-              <p>Total Price</p>
-              <p>$198.00</p>
-            </div>
-            <div>
-              <span>Icon</span>
-              <span>Add to Cart</span>
+            <div className="bottomContainer">
+              <div className="priceContainer">
+                <h2>Total Price</h2>
+                <p>$198.00</p>
+              </div>
+              <div className="addToCartButton">
+                <span>
+                  <BsHandbag className="cartIcon" />
+                </span>
+                <span className="addToCartText">Add to Cart</span>
+              </div>
             </div>
           </IonCol>
         </IonRow>
