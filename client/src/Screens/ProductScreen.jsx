@@ -64,9 +64,9 @@ const ProductScreen = () => {
           </IonCol>
         </IonRow>
         <IonRow>
-          <IonCol>
-            <h6>Description</h6>
-            <p>
+          <IonCol className="descContainer">
+            <h6 className="descHeading">Description</h6>
+            <p className="descPara">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Aspernatur inventore voluptate ad quo sapiente quae fugit dolores
               excepturi unde odit ut vitae, pariatur fuga iste?

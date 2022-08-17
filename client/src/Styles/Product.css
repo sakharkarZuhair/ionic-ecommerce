@@ -153,3 +153,18 @@
   font-size: 2.2vh;
   font-weight: bold;
 }
+
+.descHeading {
+  font-size: 2vh;
+}
+
+.descPara {
+  font-size: 1.5vh;
+  font-weight: 400;
+  color: rgb(128, 128, 128);
+  margin-top: -2vh;
+}
+
+.descContainer {
+  line-height: 1.8vh;
+}
