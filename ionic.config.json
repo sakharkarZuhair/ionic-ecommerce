@@ -1,7 +1,0 @@
-{
-  "name": "ionic-ecommerce",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
-}
