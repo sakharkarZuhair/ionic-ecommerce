@@ -10,6 +10,7 @@ import HomeScreen from "./Screens/HomeScreen";
 import HomeTab from "./components/HomeTab";
 import ProductsScreen from "./Screens/ProductsScreen";
 import ProductScreen from "./Screens/ProductScreen";
+import CartScreen from "./Screens/CartScreen";
 // import SideMenu from "./components/SideMenu";
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/home" component={HomeScreen} />
         <Route path="/products" component={ProductsScreen} />
         <Route path="/product" component={ProductScreen} />
+        <Route path="/cart" component={CartScreen} />
       </Switch>
       <HomeTab />
     </IonApp>
